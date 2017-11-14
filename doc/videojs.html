@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link href="//vjs.zencdn.net/5.11/video-js.min.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/5.11/video.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/4.1.0/videojs-contrib-hls.js"></script>
+</head>
+
+<body>
+    <video id="example-video" width="830" height="467" class="video-js vjs-default-skin" controls>
+        <source src="rtmp://10.16.58.113/live/5107_13bb38e6c85111e69776e435c87f075e" type="rtmp/mp4">
+        <!--<source src="rtmp://10.16.58.113/live/stream" type="rtmp/mp4">-->
+        <!--<source src="http://5107.liveplay.myqcloud.com/5107_13bb38e6c85111e69776e435c87f075e.m3u8" type="application/x-mpegURL">-->
+    </video>
+
+    <script>
+        var player = videojs('example-video')
+        player.play()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+{
+	"presets": [
+		[
+			"env",
+			{
+				"targets": {
+					"ie": 11
+				},
+				"modules": false,
+				"useBuiltIns": true
+			}
+		]
+	],
+	"plugins": [
+		[
+			// 用于按需引入 element-ui
+			// http://element.eleme.io/#/zh-CN/component/quickstart
+			"component",
+			[
+				{
+					"libraryName": "element-ui",
+					"styleLibraryName": "theme-default"
+				}
+			]
+		]
+	]
+}
